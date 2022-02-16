@@ -1,0 +1,23 @@
+using System;
+namespase UserProfile {
+  class UserProfle {
+    static void Main(string[] agrs) {
+      Console.WriteLine("Enter your last name, first name, age, height, weight");
+      string lastName = Console.ReadLine();
+      string firstName = Console.ReadLine();
+      double age = double.Parse(Console.ReadLine());
+      double height = double.Parse(Console.ReadLine());
+      double weight = double.Parse(Console.ReadLine());
+
+      double imt = weight / (height * height);
+
+      Console.WriteLine(
+                $"Your profile: " +
+                $"\r\nFull name: {lastName}, {firstName} " +
+                $"\r\nAge: {age} " +
+                $"\r\nWeight: {weight} " +
+                $"\r\nHeight: {height} " +
+                $"\r\nBody Mass Index: {imt}");
+    }
+  }
+}
