@@ -1,7 +1,11 @@
 using System;
+
 namespase UserProfile {
+
   class UserProfle {
+  
     static void Main(string[] agrs) {
+    
       Console.WriteLine("Enter your last name, first name, age, height, weight");
       string lastName = Console.ReadLine();
       string firstName = Console.ReadLine();
